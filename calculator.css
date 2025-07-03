@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #2a2a3e;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.display {
+    background: #1c1c2c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 2.2em;
+    height: 60px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    background: #3a3a5c;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #4a4a7c;
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #2a2a4c;
+    transform: scale(0.95);
+}
+
+.operator {
+    background: #ff9500;
+}
+
+.operator:hover {
+    background: #ffaa33;
+}
+
+.function {
+    background: #00cc99;
+}
+
+.function:hover {
+    background: #33ffcc;
+}
+
+.clear {
+    background: #ff4d4d;
+}
+
+.clear:hover {
+    background: #ff6666;
+}
+
+.equals {
+    background: #00cc00;
+}
+
+.equals:hover {
+    background: #33ff33;
+}
